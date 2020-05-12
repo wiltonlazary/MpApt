@@ -6,6 +6,8 @@ buildscript {
         jcenter()
         maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
 
+        maven { url "https://maven.google.com" }
+        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -16,6 +18,8 @@ buildscript {
         repositories {
             mavenLocal()
             jcenter()
+            maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+
         }
     }
 }
@@ -45,7 +49,7 @@ repositories {
 
 dependencies {
     compile project(':kotlin-plugin-shared')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4-M1"
     compileOnly "org.jetbrains.kotlin:kotlin-compiler-embeddable"
     compileOnly "com.google.auto.service:auto-service:1.0-rc6"
     kapt "com.google.auto.service:auto-service:1.0-rc6"

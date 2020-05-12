@@ -8,6 +8,8 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+
     }
 
     dependencies {
@@ -31,6 +33,7 @@ allprojects {
         mavenLocal()
         mavenCentral()
         google()
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
 
         maven { url "https://maven.google.com" }
         maven { url "https://plugins.gradle.org/m2/" }
@@ -48,6 +51,7 @@ allprojects {
         maven { url "https://plugins.gradle.org/m2/" }
         google()
         jcenter()
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
 
 
     }
@@ -95,7 +99,7 @@ kotlin {
 
         jvmMain {
             dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+                implementation kotlin('stdlib-jdk8')
             }
         }
         jvmTest {
