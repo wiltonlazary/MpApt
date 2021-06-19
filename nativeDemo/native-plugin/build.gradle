@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.4.0-rc'
+    ext.kotlin_version = '1.5.10'
 
 
     repositories {
@@ -39,9 +39,9 @@ compileKotlin {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     compileOnly "org.jetbrains.kotlin:kotlin-compiler"
-    compile 'de.jensklingenberg:mpapt-runtime:0.8.7'
-    compileOnly "com.google.auto.service:auto-service:1.0-rc6"
-    kapt "com.google.auto.service:auto-service:1.0-rc6"
+    compile 'de.jensklingenberg:mpapt-runtime:0.8.8'
+    compileOnly "com.google.auto.service:auto-service:1.0"
+    kapt "com.google.auto.service:auto-service:1.0"
     compile "de.jensklingenberg.nativedemo:nativedemo-annotations-jvm:0.0.1"
 
 }
